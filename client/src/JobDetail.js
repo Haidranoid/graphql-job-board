@@ -1,24 +1,32 @@
-import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
-import { jobs } from './fake-data';
+import React, {Component} from 'react';
+import {Link} from 'react-router-dom';
+import {loadJob} from "./request";
 
 export class JobDetail extends Component {
-  constructor(props) {
-    super(props);
-    const {jobId} = this.props.match.params;
-    this.state = {job: jobs.find((job) => job.id === jobId)};
-  }
+    state = {
+        job: null
+    }
 
-  render() {
-    const {job} = this.state;
-    return (
-      <div>
-        <h1 className="title">{job.title}</h1>
-        <h2 className="subtitle">
-          <Link to={`/companies/${job.company.id}`}>{job.company.name}</Link>
-        </h2>
-        <div className="box">{job.description}</div>
-      </div>
-    );
-  }
+    async componentDidMount() {
+        const {match: {params: {jobId}}} = this.props
+        const job = await loadJob(jobId);
+        this.setState({job});
+    }
+
+    render() {
+        const {job} = this.state;
+
+        if (!job)
+            return <div>Loading...</div>
+
+        return (
+            <div>
+                <h1 className="title">{job.title}</h1>
+                <h2 className="subtitle">
+                    <Link to={`/companies/${job.company.id}`}>{job.company.name}</Link>
+                </h2>
+                <div className="box">{job.description}</div>
+            </div>
+        );
+    }
 }

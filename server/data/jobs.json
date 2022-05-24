@@ -16,5 +16,59 @@
     "companyId": "SJV0-wdOM",
     "title": "Full-Stack Developer",
     "description": "We are looking for a Full-Stack Developer familiar with Node.js, Express, and React."
+  },
+  {
+    "id": "BkxN2yHBc",
+    "title": "Backend Developer",
+    "description": "testing backend post",
+    "companyId": "HJRa-DOuG"
+  },
+  {
+    "id": "S1uI31HHq",
+    "title": "Fullstack dev",
+    "description": "testing 3",
+    "companyId": "HJRa-DOuG"
+  },
+  {
+    "id": "ByytIq_rq",
+    "title": "Web Developer 2",
+    "description": "We need a web developer who will have the responsabilities to develop new features to our program",
+    "companyId": "HJRa-DOuG"
+  },
+  {
+    "id": "HJVsZi_H9",
+    "title": "Tester",
+    "description": "good finding bugs",
+    "companyId": "HJRa-DOuG"
+  },
+  {
+    "id": "BkEiHsuS9",
+    "title": "QA analist",
+    "description": "analist of QA",
+    "companyId": "HJRa-DOuG"
+  },
+  {
+    "id": "S1Qf30OH5",
+    "title": "new job 2",
+    "description": "testing 2",
+    "companyId": "HJRa-DOuG"
+  },
+  {
+    "id": "S1UOpAdrq",
+    "title": "new job 3",
+    "description": "testing 3",
+    "companyId": "HJRa-DOuG"
+  },
+  {
+    "id": "ryhgzkKBq",
+    "title": "Web Developer 65",
+    "description": "We need a web developer who will have the responsabilities to develop new features to our program",
+    "companyId": "SJV0-wdOM"
+  },
+  {
+    "id": "rJEGfJKSq",
+    "title": "testing 5",
+    "description": "testing again",
+    "companyId": "HJRa-DOuG"
   }
 ]
